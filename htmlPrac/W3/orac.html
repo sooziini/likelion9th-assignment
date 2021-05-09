@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3주차 연습 </title>
+    <style>
+        p {color : red ;}
+        h2 { color : slategrey;}
+        #small { background-color: aqua;
+            font-family: 'Black Han Sans', sans-serif;
+            font-style: italic;
+            font-weight: 100;  /* 폰트 두꼐 */
+            text-align: center; /* 본인요소 기준*/
+        }
+        .contents { font-size: 12px; }
+        /*단순 선택자*/
+        a[target = "_blank"] {color : black; }
+            /*자식 선택자 후손 선택자 */
+        article > p {color : red}
+        article div { font-size: 15px}
+        /*수도 클래스 : 특정한 조건일 때 사용하는 클래스 범위 적용 */
+        /* a:link  = 방문하지 않은 클래스 일 경우*/
+        /*: visited 방문한 클래스 일 경우*/
+        /*: hover  = 마우스를 올렷을 떄 */
+
+        /*#px {*/
+        /*    background-color: red;*/
+        /*    width: 16px;*/
+        /*    height: 16px;*/
+        /*}*/
+
+
+            /*rem : 동적인 뷰에서 일정 비율을 위해 사용 */
+
+            /*1em = 기준 font-size * 1em(1rem)*/
+
+
+    /* %단위를 사용하면 이 또한 동적인 뷰에서 일정 비율을 맞출 수 있다. */
+
+        /* 폰트 적용 font-family : '----'*/
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1> this is Xonmin this</h1>
+    <p> 첫 번째 단락 </p>
+    <h2 id="small"> 작은 xonmin </h2>
+    <p class = "contents"> 두 번째 단락 </p>
+    <h2> 작작은 xonmin </h2>
+    <p class = "contents"> 세 번째 단락  </p>
+
+</body>
+</html>
