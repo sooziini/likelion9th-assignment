@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+a{text-decoration: none;}
+a:link, a:visited, a:active {color: inherit;}
+header{background: skyblue;}
+nav{background: pink;}
+aside{background: lightgray;}
+footer{
+    background: blueviolet;
+    flex-shrink : 0;   
+}
+
+#main {
+    display: flex;
+    flex:1 /*flex-grow를 적용*/
+}
+
+.content{
+    flex: 70%;
+    padding: 40px;
+}
+
+.aside{
+    flex: 30%;
+    padding: 40px;
+}
+
+.navbar{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.header{
+    padding: 30px;
+    text-align: center;
+}
+
+.navbar a{
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.navbar a:hover{
+    color: black;
+    background-color: white;
+}
+footer{
+    padding: 30px;
+    text-align: center;
+}
+html, body{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+#main{
+    flex:1;
+}
