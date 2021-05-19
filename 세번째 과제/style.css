@@ -10,11 +10,7 @@ a:link, a:visited, a:active {color: inherit;}
 header{background: skyblue;}
 nav{background: pink;}
 aside{background: lightgray;}
-footer{
-    background: blueviolet;
-    flex-shrink : 0;   
-}
-
+footer{background: blueviolet;}
 #main {
     display: flex;
     flex:1 /*flex-grow를 적용*/
@@ -63,3 +59,8 @@ body {
 #main{
     flex:1;
 }
+
+.footer{
+    flex-shrink : 0;   
+}
+
