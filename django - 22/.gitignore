@@ -1,8 +1,9 @@
 import my_settings
 DATABASES = my_settings.DATABASES
 SECRET_KEY = my_settings.SECRET_KEY
-# Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,venv,django
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,venv,django
+
+# Created by https://www.toptal.com/developers/gitignore/api/venv,python,django,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=venv,python,django,visualstudiocode
 
 ### Django ###
 *.log
@@ -256,5 +257,5 @@ pip-selfcheck.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,venv,django
+# End of https://www.toptal.com/developers/gitignore/api/venv,python,django,visualstudiocode
 /myvenv
