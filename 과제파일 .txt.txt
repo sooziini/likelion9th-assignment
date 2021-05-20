@@ -6,7 +6,7 @@ HTML2
 Bootstrap
 Github을 통한 배포
 CSS 핵심만 골라듣기
-
+1
 당부
 개발에 재미를 붙여라!
 주체적인 학습을 해라!
