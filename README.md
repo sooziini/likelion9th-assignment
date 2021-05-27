@@ -4,6 +4,10 @@
 > 1. pull request 보낼 때 자신의 레포/[main]에서 팀장 레포/[자신의 이름 브랜치]로 보내기!!!!!!
 > 2. 과제 시작 전 git pull upstream main 명령으로 업데이트된 파일 받아오기 (팀장 레포 main 브랜치의 변경된 사항을 로컬에 받아오는 명령)
 
+### 6주차: Django Blog 프로젝트 실습(5/28 ~ 6/23)
+1. Django 챕터 **Template 상속 ~ Paginator** 강의 수강
+2. 5주차에 제출한 기존 Blog 프로젝트에 강의에서 실습한 내용이 적용된 파일 제출
+
 ### 5주차: Django CRUD 실습 (5/21 ~ 5/26)
 1. Django 챕터 **DB ~ CRUD 전체** 강의 수강
 2. 강의에서 실습한 CRUD Blog 프로젝트 파일 제출
