@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <style>
+{% extends 'base.html' %}
 
-        body{text-align: center}
-    </style>
-</head>
-<body>
+{% block content %}
+    {% if user.is_authenticated % }
+    {{user.location}}에 계시는 {{user.university}} 의 {{user.nickname}}님 안녕하세요
     <h1>Blog Project</h1>
     <div>
         <a href= "{%url  'new'%}" >write blog</a>
@@ -23,5 +17,18 @@
         </div>
     {% endfor %}
     </div>
-</body>
-</html>
+    {% if blogs.has_previous %}
+    <a href="?page=1">처음</a>
+    <a href="?page={{blogs.previous_page_number}}">이전</a>
+    {% endif %}
+    <span>{{blogs.number}}</span>
+    <span>of</span>
+    <span>{{blogs.paginator.num_pages}}</span>
+    {% if blogs.has_next %}
+    <a href="?page={{blogs.next_page_number}}">다음</a>
+    <a href="?page={{blogs.paginator.num_pages}}">마지막</a>
+    {% endif %}
+
+{% endblock %}
+
+
