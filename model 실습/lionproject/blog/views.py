@@ -24,7 +24,7 @@ def create(request):
     new_blog.save()
     return redirect('detail',new_blog.id)
 
-def edit(request):
+def edit(request,id):
     edit_blog = Blog.objects.get(id = id)
     return render(request,'edit.html',{'blog':edit_blog})
 
